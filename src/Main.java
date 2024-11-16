@@ -1,15 +1,19 @@
+import conta.Cliente;
+import conta.Conta;
+import tiposdecontas.ContaCorrente;
+import tiposdecontas.ContaPoupanca;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Cliente venilton = new Cliente();
-		venilton.setNome("Venilton");
+		Cliente Daniel = new Cliente();
+		Daniel.setNome("Daniel");
 		
-		Conta cc = new ContaCorrente(venilton);
-		Conta poupanca = new ContaPoupanca(venilton);
+		Conta cc = new ContaCorrente(Daniel);
+		Conta poupanca = new ContaPoupanca(Daniel);
 
-		cc.depositar(100);
-		cc.transferir(100, poupanca);
+		cc.depositar(500);
+		cc.transferir(500, poupanca);
 		
 		cc.imprimirExtrato();
 		poupanca.imprimirExtrato();

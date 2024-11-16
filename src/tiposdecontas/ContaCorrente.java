@@ -1,3 +1,6 @@
+package tiposdecontas;
+import conta.Cliente;
+import conta.Conta;
 
 public class ContaCorrente extends Conta {
 
